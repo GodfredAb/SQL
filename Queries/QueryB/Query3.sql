@@ -1,0 +1,4 @@
+USE FredAbCo
+
+SELECT AVG(DATEDIFF(Year, Bdate, GETDATE())) AS AVG
+    FROM Employee
