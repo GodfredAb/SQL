@@ -1,0 +1,10 @@
+USE FredABCo
+
+CREATE TABLE Works_On(
+    Essn CHAR(9),
+    Pno INT,
+    Hours DECIMAL(4,2),
+    PRIMARY KEY (Essn, Pno),
+    FOREIGN KEY (Essn) REFERENCES EMPLOYEE(Ssn),
+    FOREIGN KEY (Pno) REFERENCES PROJECT(Pnumber)
+)
