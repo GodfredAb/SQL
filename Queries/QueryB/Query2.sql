@@ -1,3 +1,4 @@
+--Query to return the fname and lname of the manager in the research department
 USE FredAbCo
 
 SELECT fname, Lname
